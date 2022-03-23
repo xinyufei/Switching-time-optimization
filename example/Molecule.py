@@ -3,9 +3,14 @@ import numpy as np
 import argparse
 
 import sys
+import time
+from qutip import Qobj
 
 sys.path.append("../")
-from switching.switch_time import *
+from tools.auxiliary_molecule import *
+from tools.evolution import compute_TV_norm, compute_obj_by_switch
+from switching.switch_time import SwitchTimeOpt
+from switching.obtain_switches import Switches
 
 parser = argparse.ArgumentParser()
 # name of example

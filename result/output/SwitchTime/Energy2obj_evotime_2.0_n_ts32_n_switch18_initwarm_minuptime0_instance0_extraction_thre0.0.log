@@ -1,0 +1,30 @@
+total tv norm 30.0
+initial file ../result/control/ADMM/EnergyADMM2_evotime2.0_n_ts32_ptypeWARM_offset0.5_penalty0.01_ADMM_10.0_iter50_instance0.csv
+difference 0.0027948542745591665
+summation of all the changes of all the controllers 0.6063424069060538
+maximum summation change of all the controllers 0.05156104238851944
+objective function before optimization -0.9971907221163887
+TV regularizer before optimization 36
+     fun: -0.9999999351165813
+     jac: array([ 7.03606498e-04, -3.52188323e-05,  7.18732652e-04,  5.82189132e-07,
+        6.78664862e-04,  1.17036732e-04,  5.93002824e-04,  3.08672843e-04,
+        4.76765274e-04,  4.28502396e-04,  3.38386752e-04,  7.05106063e-04,
+        2.02161541e-04,  9.75841438e-04,  8.23692686e-05,  1.20878461e-03,
+       -1.07662408e-05,  1.43799996e-03,  0.00000000e+00])
+ message: 'Optimization terminated successfully'
+    nfev: 8
+     nit: 5
+    njev: 5
+  status: 0
+ success: True
+       x: array([0.05695102, 0.07006569, 0.18322117, 0.06824456, 0.1216023 ,
+       0.06656922, 0.12162959, 0.06446381, 0.05904955, 0.06286915,
+       0.12196868, 0.06028824, 0.12412933, 0.05881455, 0.12770783,
+       0.05977064, 0.31867372, 0.05919754, 0.19478343])
+switching time points [0.05695102 0.12701671 0.31023788 0.37848244 0.50008474 0.56665395
+ 0.68828354 0.75274734 0.81179689 0.87466604 0.99663472 1.05692296
+ 1.18105228 1.23986683 1.36757466 1.42734531 1.74601903 1.80521657]
+computational time of retrieving switches 0.31607808299999984
+computational time of optimization 0.028059916999999324
+total computational time 0.34415108299999986
+tv norm 30.0

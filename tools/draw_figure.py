@@ -226,14 +226,14 @@ def draw_threshold_stla():
                   0.0016538190500802186, 0.9999104954213078]
     tv_la_lih = [34, 22, 26, 22, 12, 12, 14, 4, 4, 0]
     plt.figure(dpi=300)
-    plt.plot(threshold[:10], np.log10(np.array(obj_la_lih)))
+    plt.plot(threshold[:10], np.log10(np.array(obj_la_lih)), '-o')
     plt.xlabel("Threshold of selecting controller")
     plt.ylabel("Logarithm of Objective value")
     # plt.ylim([-2.809, -2.776])
     plt.savefig("../figure_paper/Molecule_LiH_evotime20.0_n_ts200_obj_log10_stla.png")
 
     plt.figure(dpi=300)
-    plt.plot(threshold[:10], tv_la_lih)
+    plt.plot(threshold[:10], tv_la_lih, '-o')
     plt.xlabel("Threshold of selecting controller")
     plt.ylabel("TV norm")
     # plt.legend()
@@ -476,13 +476,142 @@ def draw_str_diff_ub_energy():
     plt.savefig("../figure_paper/EnergyADMM2_evotime2.0_str_error_delta_t.png")
 
 
+def draw_str_error_ub_molecule_log2():
+    change = [0.041733463100893764, 0.010212036771837019, 0.0027534119707577354, 0.0007731417198063584,
+              0.00013517161104248387, 4.905932617771391e-05, 1.5732045017924357e-05]
+    ts_list = [32, 64, 128, 256, 512, 1024, 2048]
+    d = 2
+    qubit_num = 2
+    molecule = "H2"
+    Hops, H0, U0, U = generate_molecule_func(qubit_num, d, molecule)
+    evo_time = 4
+    max_sigma = 0
+    for H in Hops:
+        u, s, vh = np.linalg.svd(H, full_matrices=True)
+        if max_sigma < s[0]:
+            max_sigma = s[0]
+
+    # print(max_sigma)
+
+    ub_list = []
+    ub_1_list = []
+    ub_2_list = []
+    for n_ts in ts_list:
+        c_control_name = "../result/control/ADMM/MoleculeADMMNew_H2_evotime4.0_n_ts" + str(n_ts) + \
+                         "_ptypeWARM_offset0.5_sum_penalty1.0_penalty0.001_ADMM_0.5_iter50.csv"
+        c_control = np.loadtxt(c_control_name, delimiter=',')
+
+        # print(abs(np.sum(c_control, axis=1)))
+        epsilon = np.max(abs(np.sum(c_control, axis=1) - 1))
+        epsilon_sum = np.sum(abs(np.sum(c_control, axis=1) - 1))
+        delta_t = evo_time / n_ts
+
+        print(epsilon, epsilon_sum * delta_t)
+
+        C1 = (1 + epsilon) ** 2 * max_sigma ** 2
+        C2 = (1 + epsilon) * max_sigma
+        C0 = (1 + epsilon) * max_sigma * epsilon_sum / np.abs(1 - epsilon) * delta_t
+
+        ub_1 = 2 * C1 * np.exp(C2 * delta_t) * delta_t
+        ub_2 = C0
+        ub = ub_1 + ub_2
+        ub_1_list.append(ub_1)
+        ub_2_list.append(ub_2)
+        ub_list.append(ub)
+
+    # draw the figure
+    print(ub_list)
+    print(ub_1_list)
+    print(ub_2_list)
+    plt.figure(dpi=300)
+    plt.xlabel("Binary logarithm of time steps")
+    plt.ylabel("Binary logarithm")
+    plt.plot(np.log2(ts_list), np.log2(change), '-o', label='difference')
+    plt.plot(np.log2(ts_list), np.log2(ub_list), linestyle="-", marker='s', label="upper bound")
+    # plt.plot(np.log2(ts_list), np.log2(ub_1_list), linestyle="--", marker='^', label="first term of the upper bound")
+    # plt.plot(np.log2(ts_list), np.log2(ub_2_list), linestyle="--", marker='+', markersize='8',
+    #          label="second term of the upper bound")
+    # plt.plot(delta_t_list, integral_err, label='Maximum integral error')
+    plt.legend(prop={'size': 6})
+    # plt.legend()
+    plt.savefig("../figure_paper/MoleculeNew_H2_evotime4.0_str_error_delta_t_log2_one_ub.png")
+
+
+def draw_str_error_ub_energy_log2():
+    change = [0.015805083194930347, 0.0010995902816599568, -0.0005207824336386224, -0.00025172322191790997,
+              -0.00022925154556485694, -0.0023870906889555954, -0.003598010584822564]
+    ts_list = [32, 64, 128, 256, 512, 1024, 2048]
+    n = 4
+    num_edges = 2
+    # Jij, edges = generate_Jij_MC(n, num_edges, 100)
+
+    # n = 4
+    Jij = generate_Jij(n, 1)
+
+    C = get_ham(n, True, Jij)
+    B = get_ham(n, False, Jij)
+
+    Hops = [B, C]
+    evo_time = 2
+    max_sigma = 0
+    for H in Hops:
+        u, s, vh = np.linalg.svd(H, full_matrices=True)
+        if max_sigma < s[0]:
+            max_sigma = s[0]
+
+    u, s, vh = np.linalg.svd(C, full_matrices=True)
+    max_sigma_energy = s[0]
+
+    # print(max_sigma)
+
+    # Emin = 1
+    Emin = -2.511
+
+    ub_list = []
+    ub_1_list = []
+    ub_2_list = []
+    for n_ts in ts_list:
+        delta_t = evo_time / n_ts
+
+        C1 = max_sigma_energy * (max_sigma ** 2 + 2 + evo_time * max_sigma) / abs(Emin)
+        C2 = max_sigma
+
+        ub_1 = 2 * C1 * np.exp(C2 * delta_t) * delta_t
+        ub_2 = 0
+        ub = ub_1 + ub_2
+        ub_1_list.append(ub_1)
+        ub_2_list.append(ub_2)
+        ub_list.append(ub)
+
+    # draw the figure
+    print(ub_list)
+    print(ub_1_list)
+    print(ub_2_list)
+    plt.figure(figsize=(8, 6), dpi=300)
+    plt.xlabel("Binary logarithm of time steps")
+    plt.ylabel("Difference")
+    plt.plot(np.log2(ts_list), change, '-o', label='difference')
+    # plt.plot(np.log2(ts_list), ub_list, linestyle="-", marker='s', label="upper bound")
+    # plt.plot(np.log2(ts_list), [0] * len(ts_list), linestyle='-', marker='s', label="")
+    plt.legend(prop={'size': 6})
+    ax = plt.gca()
+    ax.spines['right'].set_color("None")
+    ax.spines['top'].set_color("None")
+    ax.spines['bottom'].set_position(("data", 0))
+    # plt.legend()
+    # plt.savefig("../figure_paper/EnergyADMM2_evotime2.0_str_error_delta_t_log10.png")
+    plt.savefig("../figure_paper/EnergyADMM4_evotime2.0_str_error_delta_t_zero.png")
+
+
 if __name__ == '__main__':
     # draw_threshold("H2", "spe_per")
     # draw_threshold("LiH", "spe_per")
     # draw_threshold("BeH2", per=True)
     # draw_err_bar()
-    # draw_threshold_stla()
+    draw_threshold_stla()
     # draw_obj_tv()
     # draw_diff_str()
     # draw_str_diff_ub_molecule()
-    draw_str_diff_ub_energy()
+    # draw_str_diff_ub_energy()
+    # draw_str_error_ub_molecule_log2()
+    # draw_str_error_ub_energy_log2()
