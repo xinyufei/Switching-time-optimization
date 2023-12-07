@@ -1,0 +1,36 @@
+filtered objective value 0.0019862445747852453
+binary objective value 0.06289049914078759
+total binary tv norm 20.0
+initial file ../new_result/c_control/Continuous/MoleculeVQENew_LiH_evotime20.0_n_ts200_ptypeCONSTANT_offset0.5_objUNIT_sum_penalty0.1.csv
+all objective value of milp 3.068116484382064
+difference of control 1.5081164843820638
+tv norm obj 26
+controller sequence is [9, 8, 6, 9, 1, 8, 7, 2, 9, 5, 3, 8, 9, 1]
+warm start length is [0.1, 0.30000000000000004, 0.5, 1.1, 1.0, 1.2000000000000002, 1.2000000000000002, 1.4000000000000004, 2.0999999999999996, 1.9000000000000004, 2.0999999999999996, 3.0, 3.700000000000001, 0.3999999999999986]
+objective of continuous control 0.0013101654734173351
+objective function before optimization 0.9001932657039874
+TV regularizer before optimization 26
+     fun: 0.0019862445747852453
+     jac: array([ 5.77415672e-06, -6.93977244e-05, -5.34837503e-06,  5.77415672e-06,
+       -2.39956547e-04,  6.90663350e-05,  1.19203499e-03,  7.14463659e-06,
+        6.62750143e-06, -4.71126306e-04, -8.03848110e-04,  7.01832528e-05,
+        8.17018850e-06, -1.64881660e-05])
+ message: 'Optimization terminated successfully'
+    nfev: 25
+     nit: 18
+    njev: 18
+  status: 0
+ success: True
+       x: array([1.66615001e-19, 4.16804065e+00, 3.25260652e-19, 4.68164916e-01,
+       9.98808715e-01, 1.28848328e+00, 1.33322134e+00, 0.00000000e+00,
+       1.46570539e+00, 1.99944328e+00, 1.99940821e+00, 2.88022347e+00,
+       3.06620049e+00, 3.32300259e-01])
+switching time points [1.66615001e-19 4.16804065e+00 4.16804065e+00 4.63620556e+00
+ 5.63501428e+00 6.92349756e+00 8.25671890e+00 8.25671890e+00
+ 9.72242430e+00 1.17218676e+01 1.37212758e+01 1.66014993e+01
+ 1.96676997e+01]
+computational time of retrieving switches 0.13133945800000024
+computational time of optimization 0.024924125000000075
+pre-computing time, objective function evaluation time, gradient time 0.000277875000000094 0.009095583000000573 0.00609904299999986
+total computational time 0.15758291700000004
+tv norm 20.0

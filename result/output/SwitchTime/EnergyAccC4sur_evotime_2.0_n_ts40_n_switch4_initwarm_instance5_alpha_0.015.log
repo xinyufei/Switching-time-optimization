@@ -1,0 +1,30 @@
+minimum energy is -2.1641371229504833
+filtered objective value -1.7445021202515028
+total binary tv norm 8.0
+binary objective value -1.7223971663256554
+initial file ../new_result/c_control/Continuous/Energy4_evotime2.0_n_ts40_ptypeCONSTANT_offset0.5_instance5.csv
+all objective value of milp 0.26452064213404525
+difference of control 0.14452064213404522
+tv norm obj 8
+controller sequence is [1, 0, 1, 0, 1]
+warm start length is [0.30000000000000004, 0.25, 0.19999999999999996, 0.3500000000000001, 0.8999999999999999]
+objective of continuous control 0.18992035700066356
+objective function before optimization 0.40669057042319545
+TV regularizer before optimization 8
+     fun: -1.744502120251503
+     jac: array([-0.16100741, -0.16087486, -0.16144478, -0.1612093 ,  0.        ])
+ message: 'Optimization terminated successfully'
+    nfev: 21
+     nit: 15
+    njev: 15
+  status: 0
+ success: True
+       x: array([4.27643298e-01, 5.16127814e-01, 8.35957010e-01, 2.20271877e-01,
+       3.53449908e-17])
+switching time points [0.4276433  0.94377111 1.77972812 2.        ]
+computational time of retrieving switches 0.025837124999999794
+computational time of optimization 0.006932625000000137
+pre-computing time, objective function evaluation time, gradient time 0.00011379099999997422 0.0018922899999993525 0.0004139189999987636
+total computational time 0.03278045799999996
+tv norm 6.0
+ratio objective value 0.19390407301311374

@@ -1,0 +1,27 @@
+binary objective value 0.16417865590338931
+total binary tv norm 1.0
+initial file ../new_result/c_control/Continuous/NOTleak_evotime2.0_n_ts20_ptypeCONSTANT_offset0.5_objUNIT.csv
+filtered objective value 0.163232381111437
+all objective value of milp 0.1392291575228547
+difference of control 0.049229157522854686
+tv norm obj 3
+controller sequence is [[0], [0, 1], [0], [0, 1]]
+warm start length is [0.4, 0.09999999999999998, 1.4000000000000001, 0.09999999999999987]
+objective of continuous control 0.16279154992104472
+objective function before optimization 0.16433567494509838
+TV regularizer before optimization 6
+     fun: 0.163232381111437
+     jac: array([-0.2712137 , -0.26990543, -0.2712137 , -0.27117269])
+ message: 'Optimization terminated successfully'
+    nfev: 7
+     nit: 7
+    njev: 7
+  status: 0
+ success: True
+       x: array([7.13121718e-01, 1.24683250e-18, 1.14912946e+00, 1.37748819e-01])
+switching time points [0.71312172 0.71312172 1.86225118]
+computational time of retrieving switches 0.006426791999999626
+computational time of optimization 0.0029897500000002353
+pre-computing time, objective function evaluation time, gradient time 4.083299999990686e-05 0.0005994180000001847 0.0005744160000000775
+total computational time 0.009490749999999881
+tv norm 1.0

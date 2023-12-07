@@ -1,0 +1,38 @@
+minimum energy is -4.757297752365604
+filtered objective value -4.530864591793922
+total binary tv norm 30.0
+binary objective value -4.331718747701651
+initial file ../new_result/c_control/Continuous/Energy6_evotime5.0_n_ts100_ptypeCONSTANT_offset0.5_instance3.csv
+difference with alpha=0 -1.460346362301168
+summation of all the changes of all the controllers 0.7239057934034764
+maximum summation change of all the controllers 0.06102556000253678
+controller sequence is [1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1]
+warm start length is [0.15000000000000002, 0.4, 0.050000000000000044, 0.09999999999999998, 0.09999999999999998, 0.09999999999999998, 0.20000000000000007, 0.25, 0.19999999999999996, 0.25, 0.30000000000000004, 0.30000000000000027, 0.3999999999999999, 0.2999999999999998, 0.5500000000000003, 0.2999999999999998, 1.0499999999999998]
+objective of continuous control 0.04521233183449391
+objective function before optimization 0.18336023405115764
+TV regularizer before optimization 32
+     fun: -4.530864591793921
+     jac: array([-0.08659887, -0.08750648, -0.08518356, -0.08908848, -0.08637868,
+       -0.08753323, -0.08658429, -0.08845678, -0.08642788, -0.08592261,
+       -0.08846647, -0.08476822, -0.08911481, -0.0855362 , -0.08709521,
+       -0.08950772,  0.        ])
+ message: 'Optimization terminated successfully'
+    nfev: 83
+     nit: 59
+    njev: 59
+  status: 0
+ success: True
+       x: array([1.92685172e-01, 5.27502233e-01, 3.30535085e-01, 2.99264944e-01,
+       2.42545202e-01, 2.67353736e-01, 3.39324556e-01, 2.82862799e-01,
+       3.84719381e-01, 2.11331421e-01, 3.67315823e-01, 1.70138525e-01,
+       4.60955056e-01, 1.63915905e-01, 6.54919638e-01, 1.04630523e-01,
+       1.74209266e-16])
+switching time points [0.19268517 0.72018741 1.05072249 1.34998743 1.59253264 1.85988637
+ 2.19921093 2.48207373 2.86679311 3.07812453 3.44544035 3.61557888
+ 4.07653393 4.24044984 4.89536948 5.        ]
+computational time of retrieving switches 0.5010819999999994
+computational time of optimization 0.6340087089999997
+pre-computing time, objective function evaluation time, gradient time 0.0013379160000006607 0.3373268279999966 0.0392570019999976
+total computational time 1.1351327919999994
+tv norm 30.0
+ratio objective value 0.04759701249708148

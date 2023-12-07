@@ -1,0 +1,16 @@
+[20, 19, 18, 17, 16, 15, 14, 13, 12, 11, 10, 9, 8]
+predictive decrease 7.98691392177696 actual decrease 0.18307193502995478
+objective value with out tv norm -1.3173470294713194
+[20, 19, 18, 17, 16, 15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2]
+predictive decrease 3.4715383697704274 actual decrease 1.2406245217719567
+objective value with out tv norm -2.557971551243276
+[20, 19, 18, 17, 16, 15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
+predictive decrease 0.4761619170430366 actual decrease 0.1403026348169809
+objective value with out tv norm -2.698274186060257
+[20, 19, 18, 17, 16, 15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0.5]
+predictive decrease 0.0 actual decrease 0.0
+objective value with out tv norm -2.698274186060257
+objective value without tv norm -2.698274186060257
+norm 8.0
+computational time 7.836251999999999
+total iterations 73

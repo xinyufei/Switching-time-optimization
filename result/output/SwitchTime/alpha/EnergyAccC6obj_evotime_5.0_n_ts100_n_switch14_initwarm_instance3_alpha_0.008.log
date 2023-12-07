@@ -1,0 +1,36 @@
+minimum energy is -4.757297752365604
+filtered objective value -4.526027567817057
+total binary tv norm 26.0
+binary objective value -4.361367226847655
+initial file ../new_result/c_control/Continuous/Energy6_evotime5.0_n_ts100_ptypeCONSTANT_offset0.5_instance3.csv
+difference with alpha=0 -1.5622877068098133
+summation of all the changes of all the controllers 0.6347463807924163
+maximum summation change of all the controllers 0.056734079344526234
+controller sequence is [1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1]
+warm start length is [0.15000000000000002, 0.4, 0.050000000000000044, 0.1499999999999999, 0.20000000000000007, 0.20000000000000007, 0.19999999999999996, 0.30000000000000004, 0.30000000000000004, 0.2999999999999998, 0.40000000000000036, 0.2999999999999998, 0.5499999999999998, 0.30000000000000027, 1.1999999999999997]
+objective of continuous control 0.04521233183449391
+objective function before optimization 0.1617773042853501
+TV regularizer before optimization 28
+     fun: -4.526027567817057
+     jac: array([-0.08714166, -0.08413865, -0.08744509, -0.08555927, -0.08608948,
+       -0.08776908, -0.08501441, -0.0862298 , -0.08585982, -0.08745763,
+       -0.08519963, -0.08643568, -0.08618318, -0.08716407,  0.        ])
+ message: 'Optimization terminated successfully'
+    nfev: 67
+     nit: 47
+    njev: 47
+  status: 0
+ success: True
+       x: array([1.98470310e-01, 5.44159495e-01, 3.82519431e-01, 3.95369227e-01,
+       3.66800374e-01, 3.17190129e-01, 3.85104401e-01, 2.61816087e-01,
+       4.41818398e-01, 2.23260822e-01, 5.24247438e-01, 1.79352924e-01,
+       6.74289159e-01, 1.05601805e-01, 1.92954105e-16])
+switching time points [0.19847031 0.7426298  1.12514924 1.52051846 1.88731884 2.20450897
+ 2.58961337 2.85142945 3.29324785 3.51650867 4.04075611 4.22010904
+ 4.8943982  5.        ]
+computational time of retrieving switches 0.5173494999999999
+computational time of optimization 0.45254670799999985
+pre-computing time, objective function evaluation time, gradient time 0.0018683329999999998 0.2273044120000005 0.02330187200000644
+total computational time 0.969917541
+tv norm 26.0
+ratio objective value 0.04861377121781907

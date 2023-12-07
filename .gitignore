@@ -1,0 +1,17 @@
+
+utils/draw_results.py
+
+*.pyc
+
+result/figure/
+result/control/SwitchTime/
+result/control/SwitchTimeNosos/
+result/output/backup/
+result/output/SwitchTimeNosos/
+result/output/SwitchTime/old/
+
+new_figure_paper/
+
+.DS_Store
+
+result/control/c_control/ADMM/

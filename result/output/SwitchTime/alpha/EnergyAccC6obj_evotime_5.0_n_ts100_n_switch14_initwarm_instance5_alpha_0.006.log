@@ -1,0 +1,35 @@
+minimum energy is -4.1082916198826425
+filtered objective value -3.895884493478756
+total binary tv norm 28.0
+binary objective value -3.843726852655642
+initial file ../new_result/c_control/Continuous/Energy6_evotime5.0_n_ts100_ptypeCONSTANT_offset0.5_instance5.csv
+difference with alpha=0 -0.8823994752470733
+summation of all the changes of all the controllers 0.8801378827153674
+maximum summation change of all the controllers 0.03399447347943385
+controller sequence is [1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1]
+warm start length is [0.15000000000000002, 0.04999999999999999, 0.04999999999999999, 0.4, 0.09999999999999998, 0.10000000000000009, 0.19999999999999996, 0.19999999999999996, 0.25, 0.25, 0.3999999999999999, 0.25000000000000044, 0.5, 0.25, 1.8499999999999996]
+objective of continuous control 0.05011502730720485
+objective function before optimization 0.1454958269904515
+TV regularizer before optimization 28
+     fun: -3.895884493478756
+     jac: array([-0.04270915, -0.0467181 , -0.04524403, -0.04370957, -0.04698238,
+       -0.04436324, -0.0449418 , -0.04558271, -0.04526954, -0.04514201,
+       -0.04632316, -0.0443616 , -0.04580109, -0.04643456,  0.        ])
+ message: 'Optimization terminated successfully'
+    nfev: 72
+     nit: 51
+    njev: 51
+  status: 0
+ success: True
+       x: array([0.19994945, 0.5402287 , 0.33551234, 0.33620307, 0.35922105,
+       0.30637496, 0.43534104, 0.28685596, 0.49211658, 0.25183129,
+       0.56823944, 0.18124844, 0.62380023, 0.08307745, 0.        ])
+switching time points [0.19994945 0.74017816 1.0756905  1.41189357 1.77111462 2.07748958
+ 2.51283061 2.79968657 3.29180315 3.54363444 4.11187388 4.29312232
+ 4.91692255 5.        ]
+computational time of retrieving switches 0.5079238340000005
+computational time of optimization 0.4355449579999995
+pre-computing time, objective function evaluation time, gradient time 0.0013964590000004051 0.2245178409999964 0.025639670000000336
+total computational time 0.9434832499999999
+tv norm 26.0
+ratio objective value 0.05170205673227113

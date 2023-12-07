@@ -1,0 +1,67 @@
+minimum energy is -3.9625455943477483
+filtered objective value -3.780052327999533
+total binary tv norm 24.0
+binary objective value -3.682520979248023
+initial file ../new_result/c_control/Continuous/Energy6_evotime5.0_n_ts100_ptypeCONSTANT_offset0.5_instance1.csv
+difference with alpha=0 -1.4199191396090503
+summation of all the changes of all the controllers 0.6638134745248375
+maximum summation change of all the controllers 0.07610363800445652
+controller sequence is [1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1]
+warm start length is [0.15000000000000002, 0.3, 0.04999999999999999, 0.25, 0.30000000000000004, 0.30000000000000004, 0.3999999999999999, 0.3500000000000001, 0.6000000000000001, 0.3500000000000001, 0.6999999999999997, 0.25, 1.0]
+objective of continuous control 0.038019321573202425
+objective function before optimization -3.277666093334822
+TV regularizer before optimization 24
+     fun: -3.780052327999533
+     jac: array([-0.00040374, -0.00025246,  0.00125887, -0.00315163,  0.00216447,
+        0.00211561, -0.00126422,  0.00111141,  0.00131576, -0.00032582,
+       -0.00109877,  0.00171655,  0.        ])
+ message: 'Optimization terminated successfully'
+    nfev: 49
+     nit: 29
+    njev: 29
+  status: 0
+ success: True
+       x: array([0.22621958, 0.52140026, 0.48696932, 0.36938725, 0.50119152,
+       0.28570335, 0.54395029, 0.26309887, 0.62218118, 0.2229141 ,
+       0.68975621, 0.12237599, 0.14485209])
+switching time points [0.22621958 0.74761984 1.23458916 1.6039764  2.10516792 2.39087127
+ 2.93482156 3.19792043 3.82010161 4.04301571 4.73277192 4.85514791]
+computational time of retrieving switches 0.9307704169999997
+computational time of optimization 0.4365736670000002
+pre-computing time, objective function evaluation time, gradient time 0.002446375000000778 0.2570797080000009 0.023131207999997017
+total computational time 1.3673819590000003
+tv norm 24.0
+minimum energy is -3.9625455943477483
+filtered objective value -3.780052327999533
+total binary tv norm 24.0
+binary objective value -3.682520979248023
+initial file ../new_result/c_control/Continuous/Energy6_evotime5.0_n_ts100_ptypeCONSTANT_offset0.5_instance1.csv
+difference with alpha=0 -1.4199191396090503
+summation of all the changes of all the controllers 0.6638134745248375
+maximum summation change of all the controllers 0.07610363800445652
+controller sequence is [1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1]
+warm start length is [0.15000000000000002, 0.3, 0.04999999999999999, 0.25, 0.30000000000000004, 0.30000000000000004, 0.3999999999999999, 0.3500000000000001, 0.6000000000000001, 0.3500000000000001, 0.6999999999999997, 0.25, 1.0]
+objective of continuous control 0.038019321573202425
+objective function before optimization 0.17283826386498913
+TV regularizer before optimization 24
+     fun: -3.780052327999533
+     jac: array([-0.00040374, -0.00025246,  0.00125887, -0.00315163,  0.00216447,
+        0.00211561, -0.00126422,  0.00111141,  0.00131576, -0.00032582,
+       -0.00109877,  0.00171655,  0.        ])
+ message: 'Optimization terminated successfully'
+    nfev: 49
+     nit: 29
+    njev: 29
+  status: 0
+ success: True
+       x: array([0.22621958, 0.52140026, 0.48696932, 0.36938725, 0.50119152,
+       0.28570335, 0.54395029, 0.26309887, 0.62218118, 0.2229141 ,
+       0.68975621, 0.12237599, 0.14485209])
+switching time points [0.22621958 0.74761984 1.23458916 1.6039764  2.10516792 2.39087127
+ 2.93482156 3.19792043 3.82010161 4.04301571 4.73277192 4.85514791]
+computational time of retrieving switches 0.5401700840000005
+computational time of optimization 0.316126208
+pre-computing time, objective function evaluation time, gradient time 0.0014065409999997058 0.17258538099999932 0.014030208000002986
+total computational time 0.8563227920000003
+tv norm 24.0
+ratio objective value 0.04605455306521333

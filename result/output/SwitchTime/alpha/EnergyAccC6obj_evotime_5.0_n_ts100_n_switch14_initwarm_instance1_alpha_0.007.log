@@ -1,0 +1,35 @@
+minimum energy is -3.9625455943477483
+filtered objective value -3.8038841458773542
+total binary tv norm 26.0
+binary objective value -3.7105786520385977
+initial file ../new_result/c_control/Continuous/Energy6_evotime5.0_n_ts100_ptypeCONSTANT_offset0.5_instance1.csv
+difference with alpha=0 -1.1197518304940886
+summation of all the changes of all the controllers 1.3034040515676746
+maximum summation change of all the controllers 0.07163350796626822
+controller sequence is [1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1]
+warm start length is [0.15000000000000002, 0.3, 0.04999999999999999, 0.20000000000000007, 0.25, 0.20000000000000007, 0.25, 0.25, 0.40000000000000013, 0.2999999999999998, 0.5, 0.30000000000000027, 0.7999999999999998, 0.25, 0.7999999999999998]
+objective of continuous control 0.038019321573202425
+objective function before optimization 0.1625586021140497
+TV regularizer before optimization 28
+     fun: -3.8038841458773542
+     jac: array([-0.05455477, -0.05442113, -0.0540382 , -0.05342798, -0.05366125,
+       -0.05512476, -0.05293466, -0.05336148, -0.05542558, -0.05066585,
+       -0.0543617 , -0.05381839, -0.05423589, -0.05159785,  0.        ])
+ message: 'Optimization terminated successfully'
+    nfev: 59
+     nit: 37
+    njev: 37
+  status: 0
+ success: True
+       x: array([0.18267768, 0.49111994, 0.3644762 , 0.31821547, 0.42326873,
+       0.29365716, 0.48634577, 0.24618876, 0.49285358, 0.21425768,
+       0.55449615, 0.18840118, 0.6389346 , 0.1051071 , 0.        ])
+switching time points [0.18267768 0.67379762 1.03827382 1.35648929 1.77975802 2.07341518
+ 2.55976096 2.80594972 3.2988033  3.51306097 4.06755713 4.25595831
+ 4.8948929  5.        ]
+computational time of retrieving switches 0.4908350419999996
+computational time of optimization 0.35979366599999985
+pre-computing time, objective function evaluation time, gradient time 0.0011369580000000212 0.1900261219999999 0.022631914999998948
+total computational time 0.8506449579999993
+tv norm 26.0
+ratio objective value 0.04004028337155585

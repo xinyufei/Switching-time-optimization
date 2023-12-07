@@ -1,0 +1,35 @@
+minimum energy is -4.1082916198826425
+filtered objective value -3.8958844357735862
+total binary tv norm 28.0
+binary objective value -3.843726852655642
+initial file ../new_result/c_control/Continuous/Energy6_evotime5.0_n_ts100_ptypeCONSTANT_offset0.5_instance5.csv
+difference with alpha=0 -1.240462287890311
+summation of all the changes of all the controllers 0.8652621938859474
+maximum summation change of all the controllers 0.04190313410621371
+controller sequence is [1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1]
+warm start length is [0.15000000000000002, 0.04999999999999999, 0.04999999999999999, 0.45000000000000007, 0.19999999999999996, 0.20000000000000007, 0.25, 0.30000000000000004, 0.40000000000000013, 0.2999999999999998, 0.5, 0.30000000000000027, 1.0, 0.09999999999999964, 0.75]
+objective of continuous control 0.05011502730720485
+objective function before optimization 0.18795848420076333
+TV regularizer before optimization 28
+     fun: -3.8958844357735862
+     jac: array([-0.04474514, -0.04634398, -0.04573994, -0.04335097, -0.04793469,
+       -0.04376441, -0.04403482, -0.048171  , -0.04448825, -0.04499828,
+       -0.04596837, -0.04518185, -0.04569504, -0.04593285,  0.        ])
+ message: 'Optimization terminated successfully'
+    nfev: 74
+     nit: 53
+    njev: 53
+  status: 0
+ success: True
+       x: array([0.19935903, 0.5395412 , 0.3339631 , 0.33541451, 0.35874253,
+       0.30707558, 0.43609127, 0.28748264, 0.49268712, 0.2522188 ,
+       0.5686188 , 0.18145609, 0.62420455, 0.08314477, 0.        ])
+switching time points [0.19935903 0.73890022 1.07286332 1.40827783 1.76702036 2.07409594
+ 2.51018721 2.79766985 3.29035697 3.54257578 4.11119458 4.29265067
+ 4.91685523 5.        ]
+computational time of retrieving switches 0.512732958
+computational time of optimization 0.4638456670000002
+pre-computing time, objective function evaluation time, gradient time 0.0011927079999995982 0.2276289549999957 0.030285000000000117
+total computational time 0.9766002919999996
+tv norm 26.0
+ratio objective value 0.051702070778296805

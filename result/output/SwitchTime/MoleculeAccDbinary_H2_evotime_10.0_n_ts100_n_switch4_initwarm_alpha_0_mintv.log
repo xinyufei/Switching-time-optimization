@@ -1,0 +1,50 @@
+filtered objective value 0.0027471744369880202
+binary objective value 0.053427073399431646
+total binary tv norm 6.0
+initial file ../new_result/c_control/Continuous/MoleculeVQENew_H2_evotime10.0_n_ts100_ptypeCONSTANT_offset0.5_objUNIT_sum_penalty1.0.csv
+controller sequence is [2, 3, 2, 3, 2]
+warm start length is [0.5, 3.3000000000000003, 1.3000000000000003, 4.6000000000000005, 0.29999999999999893]
+objective of continuous control 0.00021492275159706864
+objective function before optimization 0.07776560148168443
+TV regularizer before optimization 8
+     fun: 0.0027471744369880202
+     jac: array([ 0.0001669 , -0.00123325,  0.00036611,  0.00124852,  0.0001669 ])
+ message: 'Optimization terminated successfully'
+    nfev: 21
+     nit: 15
+    njev: 15
+  status: 0
+ success: True
+       x: array([1.69521666e-03, 3.08085960e+00, 2.50259253e+00, 4.41424897e+00,
+       6.03675388e-04])
+switching time points [1.69521666e-03 3.08255482e+00 5.58514735e+00 9.99939632e+00]
+computational time of retrieving switches 0.023893625000000362
+computational time of optimization 0.008289416000000216
+pre-computing time, objective function evaluation time, gradient time 4.483300000046597e-05 0.0022790860000023727 0.0016715009999996866
+total computational time 0.0327678330000003
+tv norm 8.0
+filtered objective value 0.0027471744369880202
+binary objective value 0.053427073399431646
+total binary tv norm 6.0
+initial file ../new_result/c_control/Continuous/MoleculeVQENew_H2_evotime10.0_n_ts100_ptypeCONSTANT_offset0.5_objUNIT_sum_penalty1.0.csv
+controller sequence is [2, 3, 2, 3, 2]
+warm start length is [0.5, 3.3000000000000003, 1.3000000000000003, 4.6000000000000005, 0.29999999999999893]
+objective of continuous control 0.00021492275159706864
+objective function before optimization 0.07776560148168443
+TV regularizer before optimization 8
+     fun: 0.0027471744369880202
+     jac: array([ 0.0001669 , -0.00123325,  0.00036611,  0.00124852,  0.0001669 ])
+ message: 'Optimization terminated successfully'
+    nfev: 21
+     nit: 15
+    njev: 15
+  status: 0
+ success: True
+       x: array([1.69521666e-03, 3.08085960e+00, 2.50259253e+00, 4.41424897e+00,
+       6.03675388e-04])
+switching time points [1.69521666e-03 3.08255482e+00 5.58514735e+00 9.99939632e+00]
+computational time of retrieving switches 0.02399795799999982
+computational time of optimization 0.008477165999999592
+pre-computing time, objective function evaluation time, gradient time 7.58330000003582e-05 0.002507164999999034 0.0016463729999971477
+total computational time 0.03314541599999998
+tv norm 8.0
